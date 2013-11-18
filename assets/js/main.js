@@ -1,6 +1,5 @@
-$(".article_frank").click(function(){
-     window.location=$(this).find("a").attr("href"); 
-     return false;
+$(function() {
+    FastClick.attach(document.body);
 });
 
 /*

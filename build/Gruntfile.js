@@ -30,7 +30,8 @@ module.exports = function(grunt) {
           '../assets/js/all.min.js': 
           [
           'bower_components/modernizr/modernizr.js',
-          'custom_components/responsive_iframes/responsive_iframes.js'
+          'custom_components/responsive_iframes/responsive_iframes.js',
+          'bower_components/fastclick/lib/fastclick.js'
           ]
         }
       }
