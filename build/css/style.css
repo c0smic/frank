@@ -769,62 +769,61 @@ hr {
 /* line 157, ../scss/style.scss */
 .posttitle_frank {
   font-size: 6em;
-  margin-top: .25em;
-  line-height: 1em;
-  margin-bottom: -.1em;
+  line-height: 1.25em;
+  margin-bottom: .1em;
 }
 
-/* line 163, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .postheader_frank {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 168, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 .postcontent_frank {
   max-width: 45em;
   margin: 0 auto;
 }
 
-/* line 172, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 .postmeta_frank {
   margin-bottom: 2em;
   float: left;
 }
 
-/* line 176, ../scss/style.scss */
+/* line 175, ../scss/style.scss */
 .sharepost_frank {
   float: right;
 }
-/* line 178, ../scss/style.scss */
+/* line 177, ../scss/style.scss */
 .sharepost_frank h4 {
   margin: 0 0 1.5em;
 }
 
-/* line 182, ../scss/style.scss */
+/* line 181, ../scss/style.scss */
 .postfooter_frank {
   clear: left;
   max-width: 45em;
 }
 
-/* line 186, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 .authorname_frank {
   margin-bottom: 5px;
   font-style: normal;
 }
 
-/* line 190, ../scss/style.scss */
+/* line 189, ../scss/style.scss */
 .authorwebsite_frank {
   font-size: 1em;
 }
 
-/* line 193, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .authorbio_frank {
   font-size: .5em;
 }
 
-/* line 196, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 .authorimage_frank img {
   max-width: 100px;
   border-radius: 50%;
@@ -833,7 +832,7 @@ hr {
   float: left;
 }
 
-/* line 203, ../scss/style.scss */
+/* line 202, ../scss/style.scss */
 .footercontent_frank {
   border-top: 0.1em solid #dddddd;
   padding-top: 2em;
