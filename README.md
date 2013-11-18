@@ -54,4 +54,4 @@ This theme will be updating as Ghost adds more features, so look out for those o
 
 ## License
 
-[MIT License](http://oswaldoacauan.mit-license.org/)
+[MIT License](http://opensource.org/licenses/MIT)
