@@ -114,7 +114,7 @@ hr {
     background-color: $color_02;
     @include slow-transition;
     &:nth-child(odd) {
-        background-color: $color_03;
+        background-color: $color_01;
     }
     a {
         color: $white;

@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       },
       combinejs: {
         files: {
-          '<%= ghost_location %>content/themes/<%= ghost_theme_name %>/assets/js/all.min.js': 
+          '../assets/js/all.min.js': 
           [
           'bower_components/modernizr/modernizr.js',
           'custom_components/responsive_iframes/responsive_iframes.js'
@@ -48,12 +48,12 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          '<%= ghost_location %>content/themes/<%= ghost_theme_name %>/assets/css/screen.css': ['bower_components/normalize-css/normalize.css', 'css/style.css']
+          '../assets/css/screen.css': ['bower_components/normalize-css/normalize.css', 'css/style.css']
         }
       }
     },
 
-    'ghost_location': '../Ghost/',
+    'ghost_location': '',
     'ghost_theme_name': 'frank',
 
   });
