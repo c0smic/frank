@@ -1,0 +1,54 @@
+{{!< default}}
+{{> header}}
+<main class="main_frank" role="main">
+    {{#post}}
+    <article class="" role="article" itemscope itemtype="http://schema.org/Article">
+        <header class="postheader_frank">
+            <h1 class="posttitle_frank">{{title}}</h1>
+        </header>
+        <div class="post_frank">
+            <div class="postcontent_frank" itemprop="articleBody">
+                {{content}}
+            </div>
+            <div class="footercontent_frank">
+                <div class="postmeta_frank">
+                    <time class="date_frank" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+                    {{#if tags}}
+                        <div class="posttags_frank">
+                            {{tags separator=", "}}
+                        </div>
+                    {{/if}}
+                </div>
+                <div class="sharepost_frank">
+                    <h4 class="share_frank">Spread the word &nbsp;</h4>
+                    <a class="share_frank ss-icon icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis_frank">Twitter</span></a>
+                    <a class="share_frank ss-icon icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis_frank">Facebook</span></a>
+                    <a class="share_frank ss-googleplus ss-icon icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis_frank"></span></a>
+                </div>
+                {{#if author}}
+                    <footer class="postfooter_frank">
+                        <address itemscope itemtype="http://schema.org/Person">
+                            {{#if author.image}}
+                                <div class="authorimage_frank"><img src="{{author.image}}" itemprop="image" /></div>
+                            {{/if}}
+                            <h4 class="authorname_frank"><span itemprop="author">{{author.name}}</span></h4>
+                            {{#if author.website}}
+                                <div class="authorwebsite_frank"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
+                            {{/if}}
+                        </address>
+                        <div class="authorbio_frank">
+                            <p>{{author.bio}}</p>
+                        </div>
+                    </footer>
+                {{/if}}
+            </div>
+        </div>
+    </article>
+    {{/post}}
+    {{#if pagination}}
+        <div class="pagination_frank">
+            {{{pagination}}}
+        </div>
+    {{/if}}
+</main>
+{{> footer}}

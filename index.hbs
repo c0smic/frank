@@ -1,0 +1,19 @@
+{{!< default}}
+{{> header}}
+<div class="wrapper_frank">
+  <main class="main_frank">
+    {{#foreach posts}}
+    <article class="article_frank">
+      <a href="{{{url}}}" rel="bookmark">
+        <h1 class="articletitle_frank">{{title}}</h1>
+      </a>
+    </article>
+    {{/foreach}}
+    {{#if pagination}}
+      <div class="pagination_frank">
+        {{{pagination}}}
+      </div>
+    {{/if}}
+  </main>
+</div>
+{{> footer}}

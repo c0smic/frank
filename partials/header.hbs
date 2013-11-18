@@ -1,0 +1,9 @@
+<div role='banner' class="header_frank" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+  {{#if @blog.logo}}<a class="logo_frank" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+  <h1 class="blogtitle_frank animated fadeInDown">
+    <a title="{{@blog.title}}" href='{{@blog.url}}'>
+      {{{@blog.title}}}
+    </a>
+  </h1>
+  <h2 class="blogdescription_frank">{{@blog.description}}</h2>
+</div>
