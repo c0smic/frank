@@ -1,29 +1,40 @@
 <html>
-<head>
-    {{! Document Settings }}
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    {{! Page Meta }}
-    <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
-    {{! Styles }}
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700,300italic,400italic,700italic|Oxygen:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
-    {{! Scripts }}
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type='text/javascript' src='/assets/js/all.min.js'></script>
-    <script type='text/javascript' src='/assets/js/main.js'></script>
-    {{! Responsive Meta Tags }}
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {{ghost_head}}
-</head>
-<body class="{{body_class}}">
-    {{{body}}}
-    {{ghost_foot}}
-<script language="javascript" type="text/javascript">
-responsive_iframes();
-</script>
-</body>
+    <head>
+        {{! Document Settings }}
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        {{! Page Meta }}
+        <title>{{meta_title}}</title>
+        <meta name="description" content="{{meta_description}}" />
+        {{! Styles }}
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700,300italic,400italic,700italic|Oxygen:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+        {{! Scripts }}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type='text/javascript' src='/assets/js/all.min.js'></script>
+        <script type='text/javascript' src='/assets/js/main.js'></script>
+        {{! Responsive Meta Tags }}
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {{ghost_head}}
+    </head>
+    <body class="{{body_class}}">
+
+        {{{body}}}
+
+        {{ghost_foot}}
+
+        <script language="javascript" type="text/javascript">
+            responsive_iframes();
+            {{> custom/config}}
+
+            (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+            function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+            t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+            t.src='//www.google-analytics.com/analytics.js';
+            z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+            ga('create',ga_ua);ga('send','pageview');
+        </script>
+    </body>
 </html>
