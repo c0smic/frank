@@ -33,7 +33,7 @@ $ git clone https://github.com/c0smic/frank "frank"
 ```
 3. Restart ghost and log in to your dashboard
 4. In settings under themes select **frank** and save
-5. That's all, now its time to [customize](#customize) your theme
+5. That's all, now its time to [customize](#customization) your theme
 
 ## Customization
 
