@@ -13,6 +13,14 @@ results
 
 npm-debug.log
 node_modules
+tmp
+
+.sass-cache
+
+custom_components
+bower.json
+component.json
+bower_components
 
 .idea/*
 *.iml
