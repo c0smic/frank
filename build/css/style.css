@@ -1,0 +1,869 @@
+@charset "UTF-8";
+/* Import all partials */
+@HeaderFont {
+  font-family: "Oxygen", Arial, Helvetica, sans-serif;
+  line-height: 1.313em;
+  font-weight: 400;
+}
+
+/* line 15, ../scss/_typography.scss */
+h1 {
+  font-size: 3em;
+  margin: .625em 0;
+}
+
+/* line 20, ../scss/_typography.scss */
+h2 {
+  font-size: 2em;
+  margin: .625em 0 -.75em;
+}
+
+/* line 25, ../scss/_typography.scss */
+h3 {
+  font-size: 1.75em;
+  margin: 1.313em 0 -.75em;
+}
+
+/* line 30, ../scss/_typography.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.313em 0;
+}
+
+/* line 35, ../scss/_typography.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.313em 0;
+}
+
+/* line 40, ../scss/_typography.scss */
+h6 {
+  font-size: 0.67em;
+  margin: 0.75em 0;
+}
+
+/* line 46, ../scss/_typography.scss */
+h1.blogtitle_frank, h1.blogtitle_frank a {
+  text-decoration: none;
+}
+
+/* line 49, ../scss/_typography.scss */
+h2.blogdescription_frank, h2.blogdescription_frank a {
+  text-decoration: none;
+}
+
+/* line 52, ../scss/_typography.scss */
+blockquote {
+  font-style: italic;
+  border-left: 0.5em solid #dd0000;
+  padding-left: 1em;
+  margin: 0 0 1em -1em;
+}
+
+/* line 73, ../scss/_typography.scss */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=date],
+input[type=month],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=week],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=color],
+select, textarea {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: .2rem .3rem;
+  margin-bottom: 5px;
+  line-height: normal;
+  border: 0;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+/* line 1, ../scss/_animate.scss */
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/* line 1, ../scss/_animate.scss */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes pulse {
+  /* line 2, ../scss/_animate.scss */
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 2, ../scss/_animate.scss */
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+
+  /* line 3, ../scss/_animate.scss */
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  /* line 6, ../scss/_animate.scss */
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 7, ../scss/_animate.scss */
+  50% {
+    -moz-transform: scale(1.1);
+  }
+
+  /* line 8, ../scss/_animate.scss */
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@-o-keyframes pulse {
+  /* line 11, ../scss/_animate.scss */
+  0% {
+    -o-transform: scale(1);
+  }
+
+  /* line 12, ../scss/_animate.scss */
+  50% {
+    -o-transform: scale(1.1);
+  }
+
+  /* line 13, ../scss/_animate.scss */
+  100% {
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  /* line 16, ../scss/_animate.scss */
+  0% {
+    transform: scale(1);
+  }
+
+  /* line 17, ../scss/_animate.scss */
+  50% {
+    transform: scale(1.1);
+  }
+
+  /* line 18, ../scss/_animate.scss */
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* line 21, ../scss/_animate.scss */
+.pulse {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -o-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes fadeInDown {
+  /* line 28, ../scss/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+
+  /* line 33, ../scss/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  /* line 40, ../scss/_animate.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+  }
+
+  /* line 45, ../scss/_animate.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInDown {
+  /* line 52, ../scss/_animate.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-20px);
+  }
+
+  /* line 57, ../scss/_animate.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  /* line 64, ../scss/_animate.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  /* line 69, ../scss/_animate.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* line 75, ../scss/_animate.scss */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/*
+* Symbolset
+* www.symbolset.com
+* Copyright © 2013 Oak Studios LLC
+*
+* Upload this file to your web server
+* and place this within your <head> tags.
+* <link href="webfonts/ss-social-regular.css" rel="stylesheet" />
+*/
+@font-face {
+  font-family: "SSSocialRegular";
+  src: url("/assets/fonts/ss-social-regular.eot");
+  src: url("/assets/fonts/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/ss-social-regular.woff") format("woff"), url("/assets/fonts/ss-social-regular.ttf") format("truetype"), url("/assets/fonts/ss-social-regular.svg#SSSocialRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+/* line 25, ../scss/_social-icons.scss */
+html:hover [class^="ss-"] {
+  -ms-zoom: 1;
+}
+
+/* line 31, ../scss/_social-icons.scss */
+.ss-icon, .ss-icon.ss-social-regular,
+[class^="ss-"]:before, [class*=" ss-"]:before,
+[class^="ss-"].ss-social-regular:before, [class*=" ss-"].ss-social-regular:before,
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"].ss-social-regular.right:after, [class*=" ss-"].ss-social-regular.right:after {
+  font-family: "SSSocialRegular";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 48, ../scss/_social-icons.scss */
+[class^="ss-"].right:before,
+[class*=" ss-"].right:before {
+  display: none;
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-facebook:before, .ss-facebook.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-twitter:before, .ss-twitter.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-linkedin:before, .ss-linkedin.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-googleplus:before, .ss-googleplus.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-appdotnet:before, .ss-appdotnet.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-zerply:before, .ss-zerply.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-reddit:before, .ss-reddit.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-steam:before, .ss-steam.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-tumblr:before, .ss-tumblr.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-wordpress:before, .ss-wordpress.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-blogger:before, .ss-blogger.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-posterous:before, .ss-posterous.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-quora:before, .ss-quora.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-youtube:before, .ss-youtube.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-vimeo:before, .ss-vimeo.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-vine:before, .ss-vine.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-letterboxd:before, .ss-letterboxd.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-flickr:before, .ss-flickr.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-instagram:before, .ss-instagram.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-500px:before, .ss-500px.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-etsy:before, .ss-etsy.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-pinterest:before, .ss-pinterest.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-svpply:before, .ss-svpply.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-readmill:before, .ss-readmill.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-dropbox:before, .ss-dropbox.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-pinboard:before, .ss-pinboard.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-delicious:before, .ss-delicious.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-dribbble:before, .ss-dribbble.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-behance:before, .ss-behance.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-github:before, .ss-github.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-octocat:before, .ss-octocat.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-stackoverflow:before, .ss-stackoverflow.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-paypal:before, .ss-paypal.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-kickstarter:before, .ss-kickstarter.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-foursquare:before, .ss-foursquare.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-yelp:before, .ss-yelp.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-skype:before, .ss-skype.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-rdio:before, .ss-rdio.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-spotify:before, .ss-spotify.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-lastfm:before, .ss-lastfm.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-soundcloud:before, .ss-soundcloud.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-link:before, .ss-link.right:after {
+  content: '🔗';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-phone:before, .ss-phone.right:after {
+  content: '📞';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-mail:before, .ss-mail.right:after {
+  content: '✉';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-like:before, .ss-like.right:after {
+  content: '👍';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-rss:before, .ss-rss.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-share:before, .ss-share.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-apple:before, .ss-apple.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-microsoft:before, .ss-microsoft.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-windows:before, .ss-windows.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-android:before, .ss-android.right:after {
+  content: '';
+}
+
+/* line 50, ../scss/_social-icons.scss */
+.ss-blackberry:before, .ss-blackberry.right:after {
+  content: '';
+}
+
+/* Legacy */
+/* line 53, ../scss/_social-icons.scss */
+.ss-fivehundredpx:before, .ss-fivehundredpx.right:after {
+  content: '';
+}
+
+/* line 12, ../scss/style.scss */
+::-moz-selection {
+  color: white;
+  background: #dd0000;
+}
+
+/* line 15, ../scss/style.scss */
+::selection {
+  color: white;
+  background: #dd0000;
+}
+
+/* line 18, ../scss/style.scss */
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+
+/* line 26, ../scss/style.scss */
+a {
+  background: transparent;
+  text-decoration: none;
+  -webkit-transition: padding .2s,color .2s,margin .2s;
+  -moz-transition: padding .2s,color .2s,margin .2s;
+  -o-transition: padding .2s,color .2s,margin .2s;
+  transition: padding .2s,color .2s,margin .2s;
+  color: #dd0000;
+}
+
+/* line 34, ../scss/style.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 38, ../scss/style.scss */
+a:active,
+a:hover {
+  outline: 0;
+  color: #F66;
+}
+
+/* line 42, ../scss/style.scss */
+li {
+  font-size: 1.75em;
+  line-height: 1.65em;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+/* line 48, ../scss/style.scss */
+li li {
+  font-size: 100%;
+}
+
+/* line 51, ../scss/style.scss */
+hr {
+  width: 20%;
+  border: 0.1em solid #dddddd;
+}
+
+/* line 56, ../scss/style.scss */
+.wrapper_frank {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 60, ../scss/style.scss */
+.proper_frank {
+  width: 100%;
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+/* line 65, ../scss/style.scss */
+.header_frank {
+  width: 100%;
+  margin: 0 auto;
+  padding: 7em 0 7em 0;
+  text-align: center;
+  color: white;
+  background-color: #34495e;
+}
+/* line 72, ../scss/style.scss */
+.header_frank a {
+  color: white;
+}
+/* line 75, ../scss/style.scss */
+.header_frank h2 {
+  font-size: 1em;
+}
+
+/* line 79, ../scss/style.scss */
+.footer_frank {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #34495e;
+  text-align: left;
+  font-size: .75em;
+  line-height: 1.75em;
+  color: white;
+}
+/* line 87, ../scss/style.scss */
+.footer_frank a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* line 92, ../scss/style.scss */
+.footerinner_frank {
+  max-width: 85em;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+/* line 97, ../scss/style.scss */
+.ss-icon {
+  color: #333;
+  font-size: 1.3em;
+  margin: .5em 1em .5em 0;
+  text-decoration: none !important;
+  -webkit-transition: padding .2s,color .2s,margin .2s;
+  -moz-transition: padding .2s,color .2s,margin .2s;
+  -o-transition: padding .2s,color .2s,margin .2s;
+  transition: padding .2s,color .2s,margin .2s;
+}
+/* line 103, ../scss/style.scss */
+.ss-icon:hover {
+  color: #dd0000;
+}
+
+/**
+*   INDEX
+*/
+/* line 111, ../scss/style.scss */
+.article_frank {
+  padding: 2em 0 2em 0;
+  text-align: center;
+  background-color: #1abc9c;
+  -webkit-transition: padding .2s,color .2s,margin .2s;
+  -moz-transition: padding .2s,color .2s,margin .2s;
+  -o-transition: padding .2s,color .2s,margin .2s;
+  transition: padding .2s,color .2s,margin .2s;
+}
+/* line 116, ../scss/style.scss */
+.article_frank:nth-child(odd) {
+  background-color: #34495e;
+}
+/* line 119, ../scss/style.scss */
+.article_frank a {
+  color: white;
+}
+/* line 122, ../scss/style.scss */
+.article_frank:hover {
+  padding: 4em 0 4em 0;
+}
+
+/* line 126, ../scss/style.scss */
+.articletitle_frank {
+  padding: 0 .25em 0 .25em;
+  font-size: 3em;
+}
+
+/* line 130, ../scss/style.scss */
+.pagination_frank {
+  padding: 2em 0 2em 0;
+  text-align: center;
+  background-color: #34495e;
+}
+/* line 134, ../scss/style.scss */
+.pagination_frank span, .pagination_frank a {
+  font-size: 1.5em;
+  color: white;
+}
+
+/**
+* POST
+*/
+/* line 143, ../scss/style.scss */
+.post_frank {
+  max-width: 65em;
+  margin: 0 auto;
+  padding: 2em;
+}
+/* line 147, ../scss/style.scss */
+.post_frank p {
+  font-size: 1.75em;
+  line-height: 1.65em;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+/* line 153, ../scss/style.scss */
+.post_frank .posttags_frank {
+  text-transform: lowercase;
+}
+
+/* line 157, ../scss/style.scss */
+.posttitle_frank {
+  font-size: 6em;
+  margin-top: .25em;
+  line-height: 1em;
+  margin-bottom: -.1em;
+}
+
+/* line 163, ../scss/style.scss */
+.postheader_frank {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 168, ../scss/style.scss */
+.postcontent_frank {
+  max-width: 45em;
+  margin: 0 auto;
+}
+
+/* line 172, ../scss/style.scss */
+.postmeta_frank {
+  margin-bottom: 2em;
+  float: left;
+}
+
+/* line 176, ../scss/style.scss */
+.sharepost_frank {
+  float: right;
+}
+/* line 178, ../scss/style.scss */
+.sharepost_frank h4 {
+  margin: 0 0 1.5em;
+}
+
+/* line 182, ../scss/style.scss */
+.postfooter_frank {
+  clear: left;
+  max-width: 45em;
+}
+
+/* line 186, ../scss/style.scss */
+.authorname_frank {
+  margin-bottom: 5px;
+  font-style: normal;
+}
+
+/* line 190, ../scss/style.scss */
+.authorwebsite_frank {
+  font-size: 1em;
+}
+
+/* line 193, ../scss/style.scss */
+.authorbio_frank {
+  font-size: .5em;
+}
+
+/* line 196, ../scss/style.scss */
+.authorimage_frank img {
+  max-width: 100px;
+  border-radius: 50%;
+  border: 0.2em solid #dddddd;
+  margin-right: 1em;
+  float: left;
+}
+
+/* line 203, ../scss/style.scss */
+.footercontent_frank {
+  border-top: 0.1em solid #dddddd;
+  padding-top: 2em;
+}
+
+@media (max-width: 52em) {
+  /* line 2, ../scss/_mediaqueries.scss */
+  .blogtitle_frank {
+    font-size: 2em;
+  }
+
+  /* line 5, ../scss/_mediaqueries.scss */
+  .posttitle_frank a {
+    font-size: 1.5em;
+  }
+
+  /* line 8, ../scss/_mediaqueries.scss */
+  .posttitle_frank {
+    font-size: 3em;
+    line-height: 1.25em;
+  }
+
+  /* line 12, ../scss/_mediaqueries.scss */
+  .articletitle_frank {
+    padding: 0 .25em 0 .25em;
+    font-size: 2em;
+  }
+
+  /* line 16, ../scss/_mediaqueries.scss */
+  .post_frank p {
+    font-size: 1.25em;
+  }
+}

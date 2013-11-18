@@ -1,0 +1,44 @@
+//**
+// Typography vars
+//**
+
+$default_font: 'Open Sans', Arial, Helvetica, sans-serif;
+$header_font: 'Oxygen', Arial, Helvetica, sans-serif;
+
+@HeaderFont {
+    font-family: $header_font;
+    line-height: 1.313em;
+    font-weight: 400;
+}
+
+@mixin slow-transition {
+  -webkit-transition: padding .2s,color .2s,margin .2s;
+  -moz-transition: padding .2s,color .2s,margin .2s;
+  -o-transition: padding .2s,color .2s,margin .2s;
+  transition: padding .2s,color .2s,margin .2s;
+}
+
+
+//**
+// Layout vars
+//**
+
+// Golden ratio, which makes just about anything look lovely
+$golden: 1.618;
+
+
+
+//**
+// Color vars
+//**
+
+$background-color: #4AB7FF;
+$red: #d00;
+$white: #FFF;
+
+$color_01: #e67e22; //Turquoise
+$color_01_hover: #16a085;
+$color_02: #1abc9c; //Sun Flower
+$color_02_hover: #f39c12;
+$color_03: #34495e; //Amethyst
+$color_03_hover: #2c3e50;
