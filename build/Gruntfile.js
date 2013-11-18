@@ -31,7 +31,10 @@ module.exports = function(grunt) {
           [
           'bower_components/modernizr/modernizr.js',
           'custom_components/responsive_iframes/responsive_iframes.js',
-          'bower_components/fastclick/lib/fastclick.js'
+          'bower_components/fastclick/lib/fastclick.js',
+          'js/symbolset.js',
+          'js/main.js',
+          'js/infinitescroll.js'
           ]
         }
       }
