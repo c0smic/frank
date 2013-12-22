@@ -57,6 +57,15 @@ module.exports = function(grunt) {
       }
     },
 
+    notify: {
+      watch: {
+        options: {
+          title: 'Task Complete',  // optional
+          message: 'SASS and Uglify finished running', //required
+        }
+      }
+    }
+
     'ghost_location': '',
     'ghost_theme_name': 'frank',
 
@@ -67,5 +76,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-notify');
 
 };
